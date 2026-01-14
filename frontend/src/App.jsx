@@ -4,7 +4,7 @@ import axios from 'axios'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const API_URL = 'http://34.68.91.195' //reemplazaremos esto con la ip de la vm
+const API_URL = 'http://34.68.91.195:3000' //reemplazaremos esto con la ip de la vm
 
 function App(){
   const [url, setUrl] = useState('')
