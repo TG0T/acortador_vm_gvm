@@ -31,4 +31,4 @@ app.get('/:id', async (req, res) =>{
     res.status(404).send('URL no encontrada');
 });
 
-app.listen(3000, () => console.log('Servidor en puerto 3000'));
+app.listen(3000, '0.0.0.0', () => console.log('Servidor en puerto 3000'));
