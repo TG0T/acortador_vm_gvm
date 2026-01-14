@@ -1,4 +1,12 @@
 services:
+
+  frontend:
+    build: ./frontend
+    container_name: acortador-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - api
   api:
     build: ./backend
     container_name: acortador-api

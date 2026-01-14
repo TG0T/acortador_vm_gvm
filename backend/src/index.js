@@ -1,10 +1,11 @@
 const express = require('express');
 const redis = require('redis');
 const { nanoid } = require('nanoid');
-
+const cors = require('cors');
 const app = express();
-app.use(express.json());
 
+app.use(express.json());
+app.use(cors());
 const client = redis.createClient({
     url: process.env.REDIS_URL || 'redis://localhost:6379'
 });
